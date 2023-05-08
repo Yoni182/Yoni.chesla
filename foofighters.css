@@ -1,71 +1,99 @@
-h1{
-    text-align: center;
-    text-shadow: 1px 1px gray;
-    font-size: 40px;
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-h2, h3{
-    text-shadow: 1px 1px gray;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
 }
 
-.photos {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.textinfo {
-    width: 90%;
-    margin: auto;
-    font-size: 1.6rem;
-    text-align: justifiy;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-body{
-    background-color: GhospptWhite;
-    border:gainsboro double;
-
+nav ul li {
+    margin-right: 20px;
 }
 
-.photos img {
-    margin: 0px 2px 10px 2px;
-    padding: 0px 10px 5px 10px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width:  auto;
-    height: auto;
-    object-fit: cover;  
-
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-#myvideo{
-  width: 50%;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+nav ul li a:hover {
+    color: #efefef;
 }
 
-table{
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    font-style: normal;
-    border-collapse: collapse;
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    width: 25%;
 }
 
-th{
-    background: coral;
-    font-family: monospace;
-    border: 1px solid black;
+footer p {
+    margin-bottom: 0;
 }
 
-td{
-    font-family: monospace;
-    background: cyan;
-    border: dimgrey;
-    border: 1px solid black;
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }
