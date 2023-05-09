@@ -1,503 +1,150 @@
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
-
-$dark: #1f2426;
-$gray: #4b5859;
-$blueGray: #293e41;
-$lightestBlue: #b4dad7;
-$lightBlue: #519ca4;
-$blue: #2196a7;
-$darkBlue: #307982;
-$darkestBlue: #215961;
-
-body {
-  background-color: $dark;
-  color: $lightestBlue;
-  font-family: "Bitter", Helvetica;
-}
-
-ul li {
-  padding-top: .5em;
-}
-
-p {
-  line-height: 1.8em;
-}
-
-h2 {
-  border: 2px solid $lightestBlue;
-  padding: .5em;
-  display: inline-block;
-}
-
-h3 {
-  line-height: .3em;
-}
-
-header {
-  overflow: hidden;
-
-  #twitter {
-    float: right;
-    margin-top: 45px;
-  }
-}
-
-.wrap {
-  padding: 2em;
-}
-
-section {
-  width: 950px;
-  margin: 0 auto;
-}
-
-hr {
-  border: 1px solid $lightestBlue;
-}
-
-.full-qual {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.third-qual {
-  width: 70%;
-  float: left;
-  margin-right: 5%;
-}
-
-.quarter-qual {
-  width: 25%;
-  float: left;
-}
-
-.qual {
-  margin-bottom: 40px;
-
-  hr {
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
-.data {
-  height: 200px;
-  position: relative;
-  width: 100%;
-  margin-bottom: 10px;
-
-  .data-item {
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-
-    h5 {
-      position: absolute;
-      bottom: 10px;
-      white-space: nowrap;
-      border-bottom: 2px solid     $lightestBlue;
-    }
-
-    span {
-      position: absolute;
-      bottom: 13px;
-      border-left: 2px solid $lightestBlue;
-    }
-  }
-}
-
-#item1 {
-  z-index: 1;
-  right: 0;
-	border-left: 400px solid transparent;
-	border-right: 400px solid transparent;
-	border-bottom: 0px solid $blue;
-}
-
-#item2 {
-  z-index: 5;
-  right: 50px;
-  border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	opacity: .5;
-	border-bottom: 0px solid $lightestBlue;
-}
-
-#item3 {
-  z-index: 5;
-  left: 60px;
-  border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-bottom: 0px solid $blue;
-
-  h5 {
-    position: absolute;
-    left: -65px;
-  }
-}
-
-#item4 {
-  z-index: 5;
-  left: 150px;
-  border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	opacity: .5;
-	border-bottom: 0px solid $lightestBlue;
-
-  h5 {
-    position: absolute;
-    left: -65px;
-  }
-}
-
-#item5 {
-  z-index: 5;
-  left: 300px;
-  border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	opacity: .5;
-	border-bottom: 0px solid $lightestBlue;
-
-  h5 {
-    text-align: right;
-    position: absolute;
-    left: -65px;
-    bottom: 70px;
-  }
-
-  span {
-    line-height: 80px;
-  }
-}
-
-#item6 {
-  z-index: 5;
-  left: 400px;
-  border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
-	opacity: .5;
-	border-bottom: 0px solid $lightestBlue;
-
-  h5 {
-    position: absolute;
-    bottom: 70px;
-  }
-
-  span {
-    line-height: 80px;
-  }
-}
-
-#item7 {
-  z-index: 10;
-  left: 450px;
-  border-left: 125px solid transparent;
-	border-right: 125px solid transparent;
-	border-bottom: 0px solid $lightestBlue;
-
-  h5 {
-    text-align: right;
-    position: absolute;
-    left: -67px;
-    bottom: 30px;
-  }
-
-  span {
-    line-height: 40px;
-  }
-}
-
-.years {
-  text-align: justify;
-
-  .middot {
-    margin: 0 auto;
-    font-size: 58px;
-    color: $gray;
-    line-height: 20px;
-  }
-
-  .year-list {
-    margin-top: -18px;
-  }
-
-  * {
-    list-style-position: outside;
-    padding: 0;
-    display: inline;
-  }
-
-  span {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 0;
-  }
-}
-
-.edu {
-  .highschool {
-    color: $gray;
-    margin-left: 1em;
-  }
-
-  .schools {
-    position: relative;
-    height: 100px;
-    margin-bottom: .5em;
-
-    .school-item {
-
-      h5 {
-        position: absolute;
-        bottom: 10px;
-        white-space: nowrap;
-        border-bottom: 2px solid     $lightestBlue;
-      }
-
-      span {
-        position: absolute;
-        bottom: 13px;
-        border-left: 2px solid $lightestBlue;
-      }
-    }
-  }
-}
-
-#school1 {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 0;
-	height: 0;
-	border-left: 125px solid transparent;
-	border-right: 125px solid transparent;
-	border-bottom: 62.5px solid $blue;
-}
-
-#school2 {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 250px;
-  width: 0;
-	height: 0;
-	border-left: 175px solid transparent;
-	border-right: 175px solid transparent;
-	border-bottom: 87.5px solid $lightestBlue;
-}
-
-.hna {
-  position: relative;
-
-  ul {
-    list-style-position: inside;
-    padding: 0;
-    color: $gray;
-
-    ul {
-      padding-left: 1em;
-    }
-  }
-}
-
-.sknex {
-  clear: both;
-  margin-bottom: 2em;
-}
-
-.sknex {
-  overflow: hidden;
-
-  .skills-text {
-    float: left;
-    width: 28%;
-    margin-right: 2%;
-    color: $gray;
-  }
-}
-.skills-vis {
-  float: left;
-  width: 70%;
-}
-
-#skill1 {
-  width: 45%;
-  margin-right: 5%;
-  float: left;
-
-  #puters .pie {
-    background-color: $lightestBlue;
-    -webkit-transform:rotate(80deg);
-    -moz-transform:rotate(80deg);
-    -o-transform:rotate(80deg);
-    transform:rotate(80deg);
-  }
-
-  #puters4 {
-    background-color: $darkestBlue;
-    -webkit-transform:rotate(210deg);
-    -moz-transform:rotate(210deg);
-    -o-transform:rotate(210deg);
-    transform:rotate(210deg);
-  }
-
-  #movies {
-    background-color: $darkBlue;
-    -webkit-transform:rotate(170deg);
-    -moz-transform:rotate(170deg);
-    -o-transform:rotate(170deg);
-    transform:rotate(170deg);
-  }
-
-  #games {
-    background-color: $blue;
-    -webkit-transform:rotate(160deg);
-    -moz-transform:rotate(160deg);
-    -o-transform:rotate(160deg);
-    transform:rotate(160deg);
-  }
-
-  #music {
-    background-color: $lightBlue;
-    -webkit-transform:rotate(110deg);
-    -moz-transform:rotate(110deg);
-    -o-transform:rotate(110deg);
-    transform:rotate(110deg);
-  }
-
-  #music2 {
-    background-color: $lightBlue;
-    -webkit-transform:rotate(80deg);
-    -moz-transform:rotate(80deg);
-    -o-transform:rotate(80deg);
-    transform:rotate(80deg);
-  }
-
-}
-
-#skill2 {
-  width: 45%;
-  float: left;
-
-  #puters .pie {
-    background-color: $lightestBlue;
-    -webkit-transform:rotate(80deg);
-    -moz-transform:rotate(80deg);
-    -o-transform:rotate(80deg);
-    transform:rotate(80deg);
-  }
-
-  #puters4 {
-    background-color: $darkestBlue;
-    -webkit-transform:rotate(210deg);
-    -moz-transform:rotate(210deg);
-    -o-transform:rotate(210deg);
-    transform:rotate(210deg);
-  }
-
-  #movies {
-    background-color: $darkBlue;
-    -webkit-transform:rotate(170deg);
-    -moz-transform:rotate(170deg);
-    -o-transform:rotate(170deg);
-    transform:rotate(170deg);
-  }
-
-  #games {
-    background-color: $blue;
-    -webkit-transform:rotate(160deg);
-    -moz-transform:rotate(160deg);
-    -o-transform:rotate(160deg);
-    transform:rotate(160deg);
-  }
-
-  #music {
-    background-color: $lightBlue;
-    -webkit-transform:rotate(110deg);
-    -moz-transform:rotate(110deg);
-    -o-transform:rotate(110deg);
-    transform:rotate(110deg);
-  }
-
-  #music2 {
-    background-color: $lightBlue;
-    -webkit-transform:rotate(80deg);
-    -moz-transform:rotate(80deg);
-    -o-transform:rotate(80deg);
-    transform:rotate(80deg);
-  }
-
-}
-
-.skill-breakdown {
-  overflow: hidden;
-
-  .pie-container {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    margin-right: 10px;
-    float: left;
-
-    .center {
-      position: absolute;
-      z-index: 50;
-      width: 75px;
-      height: 75px;
-      top: 25%;
-      left: 25%;
-      background-color: $dark;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-    }
-
-    .pie-back {
-      background-color: $dark;
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-    }
-
-    .pie {
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-      clip: rect(0px, 75px, 150px, 0px);
-    }
-
-    .hold {
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-      clip: rect(0px, 150px, 75px, 75px);
-    }
-  }
-
-  ul {
-    margin-left: 150px;
-  }
-}
-
-.pie-legend {
-
-}
-
+// MIXINS
+//Dummy Variable
+$x = false;
+// The top, left, right, and bottom are optional
+setup(display, position, margin, top = null, right = null, bottom = null, left = null)
+    display display
+    position position
+    margin margin
+    top top
+    left left
+    right right
+    bottom bottom
+
+font(font-family, font-size, letter-spacing, font-weight, line-height = 1)
+    font-family font-family
+    font-size font-size
+    letter-spacing letter-spacing
+    font-weight font-weight
+    line-height line-height
+
+// GENERAL FONTS AND CLASSES AND SETUP STUFF
+* {box-sizing: border-box; transition: 0.35s ease;}
+
+.rela-block
+    setup(block, relative, auto)
+.rela-inline
+    setup(inline-block, relative, auto)
+.floated
+    setup(inline-block, relative, $x)
+    float left
+
+.abs-center
+    setup($x, absolute, $x, 50%, $x, $x, 50%)
+    transform translate(-50%, -50%)
+    text-align center
+    width 88%
+
+// --- COLORS ---
+
+// --- PAGE STYLINGS ---
+body
+    font('Open Sans',18px,0px,400,28px)
+    background: url('http://kingofwallpapers.com/leaves/leaves-016.jpg') right no-repeat
+    background-size: cover
+    &:before
+        content ""
+        setup($x,fixed,0,0,0,0,0)
+        background-color rgba(255,255,255,0.92)
+
+.caps {text-transform: uppercase;}
+.justified {text-align: justify;}
+p.light {color: #777;}
+h2 {font('Open Sans',30px,5px,600,40px); color: black}
+h3 {font('Open Sans',21px,1px,600,28px); color: black}
+
+.page
+    width 90%
+    max-width 1200px
+    margin 80px auto
+    background-color white
+    box-shadow 6px 10px 28px 0px rgba(0,0,0,0.4)
+
+.top-bar
+    height 220px
+    background-color #848484
+    color white
+
+.name
+    setup($x,absolute,$x,$x,0,0,calc(350px + 5%))
+    height 120px
+    text-align center
+    font('Raleway',58px,8px,100,60px)
+    & div {width: 94%}
+
+.side-bar
+    setup($x,absolute,$x,60px,$x,0,5%)
+    width 350px
+    background-color #F7E0C1
+    padding 320px 30px 50px
+
+.mugshot
+    setup($x,absolute,$x,50px,$x,$x,70px)
+    height 210px
+    width 210px
+    & .logo {margin: -23px;}
+
+.logo
+    $midSize = 250px;    // Controls overall size
+    setup($x,absolute,$x,0,$x,$x,0)
+    z-index 100
+    margin 0
+    color black
+    height $midSize
+    width $midSize
+    & .logo-svg
+        height 100%
+        width 100%
+        stroke black
+        cursor pointer
+    & .logo-text
+        setup($x, absolute, $x, 58%, 16%)
+        cursor pointer
+        font("Montserrat", $midSize/5 + $midSize/50, 0px, 400, $midSize/5 + $midSize/30)
+
+.social
+    padding-left 60px
+    margin-bottom 20px
+    cursor pointer
+    &:before
+        content ""
+        setup($x,absolute,$x,-4px,$x,$x,10px)
+        height 35px
+        width 35px
+        background-size cover !important
+    &.twitter:before{background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Twitter-07-128.png') center no-repeat}
+    &.pinterest:before{background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_Pinterest-23-128.png') center no-repeat}
+    &.linked-in:before{background: url('https://cdn3.iconfinder.com/data/icons/social-media-2026/60/Socialmedia_icons_LinkedIn-128.png') center no-repeat;}
+
+.side-header
+    font('Open Sans',18px,4px,600,28px)
+    margin 60px auto 10px
+    padding-bottom 5px
+    border-bottom 1px solid #888
+
+.list-thing {padding-left: 25px; margin-bottom: 10px}
+
+.content-container
+    margin-right 0
+    width calc(95% - 350px)
+    padding 25px 40px 50px
+    & > * {margin: 0 auto 25px}
+    & > h3 {margin: 0 auto 5px}
+    & > p.long-margin {margin: 0 auto 50px}
+
+.title{width: 80%; text-align: center}
+
+.separator
+    width 240px
+    height 2px
+    background-color #999
+
+.greyed
+    background-color #DDD
+    width 100%
+    max-width 580px
+    text-align center
+    font('Open Sans',18px,6px,600,28px)
+
+@media screen and (max-width: 1150px)
+    .name {color: white; font('Raleway',38px,6px,100,48px)}
