@@ -1,17 +1,22 @@
-// Get the button
-var scrollToTopBtn = document.getElementById("scroll-to-top");
+/**
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-};
+Resume concept based on the Dribbble by John Wilson http://dribbble.com/shots/900308-Resume?list=users
 
-// When the user clicks on the button, scroll to the top of the document
-scrollToTopBtn.onclick = function() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
+**/
+
+$(document).ready(function() {
+  $('#item1').animate({
+     borderBottomWidth: '200px'}, 1000);
+  $('#item2').animate({
+     borderBottomWidth: '50px'}, 1000);
+  $('#item3').animate({
+     borderBottomWidth: '15px'}, 1000);
+  $('#item4').animate({
+     borderBottomWidth: '37.5px'}, 1000);
+  $('#item5').animate({
+     borderBottomWidth: '37.5px'}, 1000);
+  $('#item6').animate({
+     borderBottomWidth: '100px'}, 1000);
+  $('#item7').animate({
+     borderBottomWidth: '62.5px'}, 1000);
+})
